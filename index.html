@@ -1,48 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pizzzaaaaa</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <nav>
-    <div class="logo">
-      <a href="#">Angel</a>
-    </div>
-    <div class="links">
-      <a href="#">Home</a>
-      <a href="#">Work</a>
-      <a href="#">Expertise</a>
-      <a href="#">Agency</a>
-      <a href="#">Jobs</a>
-    </div>
-  </nav>
-
-  <section class="lottie-container">
-    <div class="animation"></div>
-  </section>
-
-  <section class="gradient"></section>
-  <section class="website-container">
-    <div class="end-lottie"></div>
-    <div class="grid-container">
-      <div class="hero-left">
-        <h1>Website content goes here</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure tempora ipsam quos commodi aperiam aut, voluptate nostrum obcaecati! Quos voluptatibus ipsam eligendi tempore facere nemo tenetur alias sit iure dolore?</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizzzaaaaa</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Diplomata+SC&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="#">Angel</a>
       </div>
-    </div>
-  </section>
+      <div class="links">
+        <a href="#">Home</a>
+        <a href="#">Work</a>
+        <a href="#">Expertise</a>
+        <a href="#">Agency</a>
+        <a href="#">Jobs</a>
+      </div>
+    </nav>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <script src="https://unpkg.com/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
-  <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
-  <script src="https://unpkg.com/three@0.128.0/examples/js/libs/draco/draco_decoder.js"></script>
-  <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/DRACOLoader.js"></script>
-  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
-  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
-  <script src="./script.js"></script>
-</body>
+    <section class="lottie-container">
+      <div class="animation"></div>
+    </section>
+
+    <section class="gradient"></section>
+    <section class="website-container">
+      <div class="end-lottie"></div>
+      <div class="grid-container">
+        <div class="hero-left">
+          <h1>Ingredients Fresh from Italy (Or So We Say)</h1>
+          <p>
+            At our pizzeria, we proudly claim to source ingredients straight
+            from Italy. Picture <span class="diplomata" data-image="images/tomatoes.jpg">tomatoes</span> ripened
+            under the Tuscan sun, <span class="diplomata" data-image="images/basil.jpg">basil</span> grown in
+            the rolling hills of Rome, and
+            <span class="diplomata" data-image="images/mozzarella.jpg">mozzarella</span> made from the
+            happiest cows in Naples. We go to great lengths to bring you an
+            authentic taste of Italy, even if it sometimes means making a quick
+            stop at the local market. Enjoy a slice of tradition with every
+            bite! Try our <span class="diplomata" data-image="images/onions.jpg">onions</span> and
+            <span class="diplomata" data-image="images/olives.jpg">olives</span> for a complete
+            experience.
+          </p>
+          <div class="background-images">
+            <img src="tomatoes.jpg" alt="Tomatoes" />
+            <img src="basil.jpg" alt="Basil" />
+            <img src="mozzarella.jpg" alt="Mozzarella" />
+            <img src="onions.jpg" alt="Onions" />
+            <img src="olives.jpg" alt="Olives" />
+          </div>
+        </div>
+        <div class="model">
+          <img src="cheeseplattter.jpg" alt="Cheese Platter" />
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/libs/draco/draco_decoder.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>

@@ -1,163 +1,194 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.diplomata {
+  font-family: 'Diplomata SC', cursive;
+}
+
+body {
+  width: 100%;
+  height: 500vh;
+  background: #000;
+  font-family: "PP Neue Montreal";
+}
+
+h1 {
+  margin: 0.25em 0;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  font-family: 'Diplomata SC', cursive;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 400;
+  padding-top: 2em;
+  line-height: 200%;
+  font-family: 'Imbue', serif;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.logo a {
+  font-size: 28px;
+}
+
+.lottie-container .animation {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  z-index: -1;
+  filter: saturate(1.2);
+}
+
+.animation:after {
+  content: "";
+  background-color: rgb(0, 0, 0);
+  width: 200%;
+  height: 200%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.1;
+  animation: animateGrain 8s steps(10) infinite;
+}
+
+.gradient {
+  width: 100vw;
+  height: 350vh;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  z-index: 1;
+}
+
+.website-container {
+  position: relative;
+  width: 100%;
+  padding: 10em 5em;
+  background: #000;
+  color: #fff;
+  z-index: 1;
+}
+
+.end-lottie {
+  position: absolute;
+  top: 100vh;
+  width: 100%;
+  height: 1px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 10em;
+  align-items: start;
+}
+
+.hero-left {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.hero-left .background-images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  overflow: hidden; /* Prevent overflow issues */
+  z-index: -1;
+}
+
+.hero-left .background-images img {
+  flex: 1 0 20%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  transform-origin: center center; /* Ensure scaling occurs from the center */
+}
+
+.hero-left .background-images img.visible {
+  opacity: 1; /* Show image on hover */
+}
+
+.model {
+  width: 100%;
+  height: 100%;
+  border-radius: 10%; /* Set a fixed height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensure no overflow */
+}
+
+@keyframes animateGrain {
+  0%, 100% {
+    transform: translate(0, 0);
   }
-  
-  body {
-    width: 100%;
-    height: 500vh;
-    background: #000;
-    font-family: "PP Neue Montreal";
+  10% {
+    transform: translate(-5%, -10%);
   }
-  
-  h1 {
-    margin: 0.25em 0;
-    font-size: 80px;
-    font-weight: 500;
-    letter-spacing: -0.02em;
+  20% {
+    transform: translate(-15%, -20%);
   }
-  
-  p {
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 175%;
+  30% {
+    transform: translate(-5%, -10%);
   }
-  
-  nav {
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    padding: 2em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 2;
+  40% {
+    transform: translate(-15%, -20%);
   }
-  
-  .links {
-    display: flex;
-    align-items: center;
-    gap: 2em;
+  50% {
+    transform: translate(-5%, -10%);
   }
-  
-  nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
+  60% {
+    transform: translate(-15%, -20%);
   }
-  
-  .logo a {
-    font-size: 28px;
+  70% {
+    transform: translate(-5%, -10%);
   }
-  
-  .lottie-container .animation {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    z-index: -1;
-    filter: saturate(1.2);
+  80% {
+    transform: translate(-15%, -20%);
   }
-  
-  .animation:after {
-    content: "";
-    background-color: rgb(0, 0, 0);
-    width: 200%;
-    height: 200%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    opacity: 0.1;
-    animation: animateGrain 8s steps(10) infinite;
+  90% {
+    transform: translate(-5%, -10%);
   }
-  
-  .gradient {
-    width: 100vw;
-    height: 350vh;
-    overflow: hidden;
-    position: relative;
-    background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0.2) 50%,
-      rgba(0, 0, 0, 1) 100%
-    );
-    z-index: 1;
+  100% {
+    transform: translate(-15%, -20%);
   }
-  
-  .website-container {
-    position: relative;
-    width: 100%;
-    padding: 10em 5em;
-    background: #000;
-    color: #fff;
-    z-index: 1;
-  }
-  
-  .end-lottie {
-    position: absolute;
-    top: 100vh;
-    width: 100%;
-    height: 1px;
-  }
-  
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 2em;
-    align-items: start;
-  }
-  
-  .hero-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .model {
-    width: 100%;
-    height: 100%; /* Set a fixed height */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; /* Ensure no overflow */
-  }
-  
-  @keyframes animateGrain {
-    0%, 100% {
-      transform: translate(0, 0);
-    }
-    10% {
-      transform: translate(-5%, -10%);
-    }
-    20% {
-      transform: translate(-15%, -20%);
-    }
-    30% {
-      transform: translate(-5%, -10%);
-    }
-    40% {
-      transform: translate(-15%, -20%);
-    }
-    50% {
-      transform: translate(-5%, -10%);
-    }
-    60% {
-      transform: translate(-15%, -20%);
-    }
-    70% {
-      transform: translate(-5%, -10%);
-    }
-    80% {
-      transform: translate(-15%, -20%);
-    }
-    90% {
-      transform: translate(-5%, -10%);
-    }
-    100% {
-      transform: translate(-15%, -20%);
-    }
-  }
-  
+}
